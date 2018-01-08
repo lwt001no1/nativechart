@@ -27,7 +27,7 @@ export default class zhexiantu extends Component {
             xiaoshou:0,
             data: {
                 dataSets: [{
-                    values: [{y: 10719}, {y: 11125}, {y: 11605}, {y: 13376},{y: 14260},{y: 14603},{y: 14958},{y: 15772},{y: 15772},{y: 15571},{y: 15452},],
+                    values: [{y: 10719}, {y: 11125}, {y: 11605}, {y: 13376},{y: 14260},{y: 14603},{y: 14958},{y: 15772},{y: 15772},{y: 15571},{y: 15452},{y:16064}],
                     label: '',
                     config: {
                         lineWidth: 1.5,
@@ -43,7 +43,7 @@ export default class zhexiantu extends Component {
 
             },
             xAxis: {
-                valueFormatter: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月','9月','10月','11月'],
+                valueFormatter: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月','9月','10月','11月','12月'],
                 textColor: processColor('black'),
                 textSize: 16,
                 gridColor: processColor('red'),
@@ -102,13 +102,13 @@ export default class zhexiantu extends Component {
     goershoushuju(ershou){
         if(ershou===0){
             this.setState({
-                title:'济南市商品房成交趋势',
+                title:'2017年济南市二手房均价',
                 ershou:1,
-                danwei:'套',
+                danwei:'元',
                 xiaoshou:0,
                 data: {
                     dataSets: [{
-                        values: [{y: 12222}, {y: 12312}, {y: 14227}, {y: 13903},{y: 10227},{y: 13456},{y: 11194},{y: 9968},{y: 11139},{y: 12977},{y: 17736},],
+                        values: [{y: 13926}, {y: 14357}, {y: 14434}, {y: 14658},{y: 14719},{y: 15102},{y: 15306},{y: 16239},{y: 16800},{y: 16920},{y: 16752},{y:16840}],
                         label: '',
                         config: {
                             lineWidth: 1.5,
@@ -127,13 +127,13 @@ export default class zhexiantu extends Component {
         }
         if(ershou===1){
             this.setState({
-                title:'济南市11月主要区县均价',
+                title:'2017年济南市房地产均价',
                 ershou:0,
                 danwei:'元',
                 xiaoshou:0,
                 data: {
                     dataSets: [{
-                        values: [{y: 10719}, {y: 11125}, {y: 11605}, {y: 13376},{y: 14260},{y: 14603},{y: 14958},{y: 15772},{y: 15772},{y: 15571},{y: 15452},],
+                        values: [{y: 10719}, {y: 11125}, {y: 11605}, {y: 13376},{y: 14260},{y: 14603},{y: 14958},{y: 15772},{y: 15772},{y: 15571},{y: 15452},{y:16064}],
                         label: '',
                         config: {
                             lineWidth: 1.5,
@@ -162,7 +162,7 @@ export default class zhexiantu extends Component {
                 ershou:0,
                 data: {
                     dataSets: [{
-                        values: [{y: 18}, {y: 9}, {y: 16}, {y: 8},{y: 14},{y: 20},{y: 10},{y: 20},{y: 26},{y: 17},{y: 17},],
+                        values: [{y: 18}, {y: 9}, {y: 16}, {y: 8},{y: 14},{y: 20},{y: 10},{y: 20},{y: 26},{y: 17},{y: 17},{y:16}],
                         label: '',
                         config: {
                             lineWidth: 1.5,
@@ -187,7 +187,7 @@ export default class zhexiantu extends Component {
                 ershou:1,
                 data: {
                     dataSets: [{
-                        values: [{y: 12222}, {y: 12312}, {y: 14227}, {y: 13903},{y: 10227},{y: 13456},{y: 11194},{y: 9968},{y: 11139},{y: 12977},{y: 17736},],
+                        values: [{y: 12222}, {y: 12312}, {y: 14227}, {y: 13903},{y: 10227},{y: 13456},{y: 11194},{y: 9968},{y: 11139},{y: 12977},{y: 17736},{y:15913}],
                         label: '',
                         config: {
                             lineWidth: 1.5,
@@ -221,13 +221,13 @@ export default class zhexiantu extends Component {
                                       onPress={() => {
                                           this.goershoushuju(this.state.ershou);
                                       }}>
-                        <Icon name="eye" size={30} color="#900"/>
+                        <Icon name="eye" size={20} color="#900"/>
                     </TouchableOpacity>
                     <TouchableOpacity style={{flex: 1}}
                                       onPress={() => {
                                           this.goxiaoshouliang(this.state.xiaoshou);
                                       }}>
-                        <Icon name="eye" size={30} color="#900"/>
+                        <Icon name="eye" size={20} color="#900"/>
                     </TouchableOpacity>
                     <Text style={{flex: 1, fontSize: 8, marginTop: 10, marginRight: 10}}>单位:{this.state.danwei}</Text>
                 </View>

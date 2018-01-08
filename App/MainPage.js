@@ -93,7 +93,7 @@ export default class MainPage extends Component {
                     </View>
                     <View style={{marginTop:14}}>
                         <Text style={styles.fontstyle}>调查结果：</Text>
-                        <Text style={styles.mianfontstyle}>        随着房地产价格受到政府的限价干预，粗略估计济南未来一年的房地产价格。历城区，由于开盘的房地产数量较多，房价基本保持稳定状态。历下区商业最发达有或许的涨幅。市中区二手房的价格明显高于新房价格，并且教育条件优秀，涨幅明显。天桥区和槐荫区的房价可能有小部分上涨。</Text>
+                        <Text style={styles.mianfontstyle}>        通过下面四个方面的图表，粗略估计济南未来一年的房地产价格。历城区，开盘的房地产数量最多，人民关注度较高，涨幅最大。历下区商业最发达，人民关注度最高，属于济南市繁华地段，房价涨幅其次。市中区教育条件优秀，二手房的价格明显高于新房价格，涨幅次之。天桥区，槐荫区，高新区的房价也会均有涨幅。</Text>
                     </View>
                 </View>
                 <View style={{flex: 1}}>
@@ -114,8 +114,7 @@ export default class MainPage extends Component {
                         </View>
                         <View tabLabel="蛛网图" style={{paddingRight: 0, marginRight: 0}}>
                             <Text style={styles.fontstyle}>雷达图介绍：</Text>
-                            <Text style={styles.mianfontstyle}>        采用雷达图对济南市的历城区，历下区，市中区，三个行政区，在教育，商业，交通，空气质量，环卫五个方面进行评估。
-                            </Text>
+                            <Text style={styles.mianfontstyle}>        采用雷达图对济南市的历城区，历下区，市中区，三个行政区，在教育，商业，交通，空气质量，环卫五个方面进行评估。</Text>
                             <TouchableOpacity onPress={() => {
                                 this.navigatorTozhuwangtu()
                             }}>
@@ -124,7 +123,7 @@ export default class MainPage extends Component {
                         </View>
                         <View tabLabel="折线图">
                             <Text style={styles.fontstyle}>折线图介绍：</Text>
-                            <Text style={styles.mianfontstyle}>        从数据来看，知道济南市的房价在今年持续上涨之后，成交量并没有下降，粗略预测济南市房地产价在未来一年不会有太大的下降幅度。</Text>
+                            <Text style={styles.mianfontstyle}>        介绍了济南市12个月以来房价的变化以及二手房变化，另外又添加了商品房预售数量和成交趋势。</Text>
                             <TouchableOpacity onPress={() => {
                                 this.navigatorTozhexiantu()
                             }}>
@@ -133,7 +132,7 @@ export default class MainPage extends Component {
                         </View>
                         <View tabLabel="饼图">
                             <Text style={styles.fontstyle}>饼图介绍：</Text>
-                            <Text style={styles.mianfontstyle}>        通过对济南市各个区县的住宅预售数量占比进行分析，历城区的房地产销售可能不会太过紧张，历下区的住宅销售可能会出现紧张的局面，房价还会持续上涨。</Text>
+                            <Text style={styles.mianfontstyle}>        介绍了济南市12月份以来近3个月个主要区域开盘所占比重，以及各区域的关注度。</Text>
                             <TouchableOpacity onPress={() => {
                                 this.navigatorTobingtu()
                             }}>
@@ -141,14 +140,6 @@ export default class MainPage extends Component {
                             </TouchableOpacity>
                         </View>
 
-                        <View tabLabel="气泡图">
-                            <Text style={styles.fontstyle}>气泡图介绍：</Text>
-                            <TouchableOpacity onPress={() => {
-                                this.navigatorToqipaotu()
-                            }}>
-                                <Text style={styles.touchstyle}>点我跳到气泡图</Text>
-                            </TouchableOpacity>
-                        </View>
                     </ScrollableTabView>
                 </View>
             </View>

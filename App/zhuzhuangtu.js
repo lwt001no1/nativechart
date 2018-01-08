@@ -21,7 +21,7 @@ export default class zhuzhuangtu extends Component {
         super(props);
         this.state = {
             ershou:0,
-            title:'济南市11月主要区县均价',
+            title:'济南市12月主要区县均价',
             legend: {
                 enabled: true,
                 textSize: 14,
@@ -86,7 +86,7 @@ export default class zhuzhuangtu extends Component {
     goershoushuju(ershou){
         if(ershou===0){
             this.setState({
-                title:'济南市11月二手房均价',
+                title:'济南市12月二手房均价',
                 ershou:1,
                 data: {
                     dataSets: [{
@@ -106,7 +106,7 @@ export default class zhuzhuangtu extends Component {
         }
         if(ershou===1){
             this.setState({
-                title:'济南市11月主要区县均价',
+                title:'济南市12月主要区县均价',
                 ershou:0,
                 data: {
                     dataSets: [{
@@ -138,11 +138,11 @@ export default class zhuzhuangtu extends Component {
                         <Text style={{flex: 1, fontSize: 16, marginTop: 10, marginRight: 10}}>back</Text>
                     </TouchableOpacity>
                     <Text style={{flex: 8, fontSize: 20, marginLeft: 20}}>{this.state.title}</Text>
-                    <TouchableOpacity style={{flex: 2}}
+                    <TouchableOpacity style={{flex: 1}}
                                       onPress={() => {
                                           this.goershoushuju(this.state.ershou);
                                       }}>
-                        <Icon name="eye" size={30} color="#900"/>
+                        <Icon name="eye" size={20} color="#900"/>
                     </TouchableOpacity>
                     <Text style={{flex: 1, fontSize: 8, marginTop: 10, marginRight: 10}}>单位:元</Text>
                 </View>
